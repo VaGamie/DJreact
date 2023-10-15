@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React from 'react';
+import './App.scss'
 class App extends React.Component{
   state = {
     details: [],
@@ -16,14 +17,15 @@ class App extends React.Component{
   render(){
     return(
       <div>
-        <h1>Data Generated From Django</h1>
+        <h1 class="bruh">Data Generated From Django</h1>
         <hr></hr>
         {this.state.details.map((output, id) => (
           <div key={id}>
-            <div>
+            <div class="table">
               <h2>{output.employee}</h2>
               <h3>{output.department}</h3>
-              <hr></hr>
+              <p>{`Manager: ${output.manager}`}</p>
+              
             </div>
           </div>
         ))}
