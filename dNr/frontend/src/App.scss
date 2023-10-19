@@ -1,0 +1,49 @@
+body{
+    overflow-x: hidden;
+    background-color: yellow;
+}
+
+.bruh{
+    color: blue;
+}
+
+.lst{
+    position: relative;
+    margin: 40px auto;
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: .3s ease-in;
+
+}
+.lst:hover{
+    font-size: 20px;
+}
+
+.form{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.form > input {
+    margin: 5px;
+
+    padding: 2px;
+    height: 25px;
+    width: 250px;
+    border: 2px solid black;
+    border-radius: 10px;
+
+}
+
+.form > button{
+    height: 35px;
+    background-color: cyan;
+    color: black;
+    border: 1px solid black;
+    border-radius: 10px;
+}
