@@ -6,3 +6,7 @@ class ReactSerializer(serializers.ModelSerializer):
         model = React
         fields = ('employee', 'department', 'time', 'manager')
 
+class SchoolSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = School
+        fields = '__all__'

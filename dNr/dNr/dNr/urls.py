@@ -19,5 +19,6 @@ from django.urls import path, include
 from app.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', ReactView.as_view(), name="lol")
+    path('', ReactView.as_view(), name="lol"),
+    path('school/', Schoolview.as_view())
 ]
